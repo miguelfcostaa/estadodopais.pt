@@ -38,6 +38,8 @@ const dadosSite = JSON.stringify({
   url: SITE_URL,
   inLanguage: "pt-PT",
   description: SITE_DESCRICAO,
+  // logótipo do site, para os motores de busca o associarem ao nome
+  publisher: { "@type": "Organization", name: SITE_NOME, url: SITE_URL, logo: `${SITE_URL}/icon-512.png` },
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
